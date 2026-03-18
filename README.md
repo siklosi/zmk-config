@@ -110,7 +110,18 @@ Defined in `boards/shields/g25_box/g25_box.conf`.
 - `CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=1800000` -> deep sleep after 30 min
 - `CONFIG_ZMK_BATTERY_REPORTING=y` -> battery level reporting over BLE
 
-## Build and Flash (GitHub Actions)
+## Quick Install (Recommended)
+
+The easiest way to install firmware is from GitHub Releases:
+
+1. Open the latest release: `https://github.com/siklosi/g25-button-box/releases/latest`
+2. Download `g25_box-nice_nano_v2-zmk.uf2`
+3. Put the board in UF2 bootloader mode (double reset)
+4. Board appears as a mass storage drive (for example `G:` on Windows)
+5. Copy the downloaded UF2 file to that drive
+6. The drive disappears automatically after flashing (expected behavior)
+
+## Build and Flash from Source (Optional)
 
 This repo is set up for cloud builds via GitHub Actions.
 
