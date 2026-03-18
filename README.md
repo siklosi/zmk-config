@@ -86,18 +86,18 @@ BTN8 uses `&lt 1 F20` behavior:
 
 ### System Layer (hold BTN8)
 
-- BTN1 -> `BT_NXT`
-- BTN2 -> `BT_PRV`
-- BTN3 -> `BT_CLR`
-- BTN4 -> `C_PP` (Play/Pause)
-- BTN5 -> `C_MUTE`
-- BTN6 -> `TO(0)`
-- BTN7 -> `C_PREV`
-- BTN8 -> `C_NEXT`
+- BTN1 -> `F3`
+- BTN2 -> `F4`
+- BTN3 -> `F5`
+- BTN4 -> `F6`
+- BTN5 -> `F7`
+- BTN6 -> `C_MUTE` (ENC1 click)
+- BTN7 -> `F8`
+- BTN8 -> `F9`
 
 - ENC1 (left/right) -> `C_VOL_UP` / `C_VOL_DN`
-- ENC2 (left/right) -> `C_NEXT` / `C_PREV`
-- ENC3 (left/right) -> `PG_UP` / `PG_DN`
+- ENC2 (left/right) -> `F10` / `F11`
+- ENC3 (left/right) -> `F12` / `PG_UP`
 
 Note: If left/right is reversed, swap the encoder A and B wires for that encoder.
 
@@ -125,7 +125,7 @@ This repo is set up for cloud builds via GitHub Actions.
 ## Pairing and Usage
 
 - Pair the board over Bluetooth as a keyboard/HID device.
-- In-game, bind controls to the emitted keys (`F13`-`F24`, `F1`, `F2`).
+- In-game, bind controls to the emitted keys (`F1`-`F24`, `PG_UP`).
 - For troubleshooting, test in a key event viewer before launching the game.
 
 ## Notes for Pro Micro nRF52840 Clones
