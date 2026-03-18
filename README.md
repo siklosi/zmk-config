@@ -57,6 +57,16 @@ Current logical mapping is defined in `boards/shields/g25_box/g25_box.dtsi`.
 
 Defined in `config/g25_box.keymap`.
 
+This layout has two layers:
+
+- `race_layer` (default)
+- `system_layer` (hold BTN8 to access)
+
+BTN8 uses `&lt 1 F20` behavior:
+
+- Tap BTN8 -> sends `F20`
+- Hold BTN8 -> momentarily activates `system_layer`
+
 ### Buttons
 
 - Taster 1 -> `F13` (Pit Limiter)
@@ -66,13 +76,28 @@ Defined in `config/g25_box.keymap`.
 - Taster 5 -> `F17` (Starter)
 - Encoder Click 1 -> `F18` (Menu Select)
 - Encoder Click 2 -> `F19` (Engine Map)
-- Encoder Click 3 -> `F20` (Dash Page)
+- Encoder Click 3 / BTN8 tap -> `F20` (Dash Page)
 
 ### Encoders
 
 - Encoder 1 (left/right) -> `F21` / `F22` (TC -/+)
 - Encoder 2 (left/right) -> `F23` / `F24` (ABS -/+)
 - Encoder 3 (left/right) -> `F1` / `F2` (Bias -/+)
+
+### System Layer (hold BTN8)
+
+- BTN1 -> `BT_NXT`
+- BTN2 -> `BT_PRV`
+- BTN3 -> `BT_CLR`
+- BTN4 -> `C_PP` (Play/Pause)
+- BTN5 -> `C_MUTE`
+- BTN6 -> `TO(0)`
+- BTN7 -> `C_PREV`
+- BTN8 -> `C_NEXT`
+
+- ENC1 (left/right) -> `C_VOL_UP` / `C_VOL_DN`
+- ENC2 (left/right) -> `C_NEXT` / `C_PREV`
+- ENC3 (left/right) -> `PG_UP` / `PG_DN`
 
 Note: If left/right is reversed, swap the encoder A and B wires for that encoder.
 
