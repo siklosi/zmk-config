@@ -1,0 +1,9 @@
+# Copyright (c) 2026
+# SPDX-License-Identifier: MIT
+
+if SHIELD_G25_BOX
+
+config ZMK_KEYBOARD_NAME
+    default "G25 Box (8B-3E)"
+
+endif

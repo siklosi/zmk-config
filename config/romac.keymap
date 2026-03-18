@@ -1,0 +1,61 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+    race_primary {
+// ----------------------------
+// | F13     | F14 | F15      |
+// | F16     | F17 | F18      |
+// | F19     | F20 | F21      |
+// | SYS LYR | F22 | ALT LYR  |
+// ----------------------------
+            bindings = <
+    &kp F13 &kp F14 &kp F15
+    &kp F16 &kp F17 &kp F18
+    &kp F19 &kp F20 &kp F21
+    &to 2   &kp F22 &to 1
+            >;
+        };
+
+    race_alt {
+// --------------------------
+// | F1      | F2   | F3    |
+// | F4      | F5   | F6    |
+// | F7      | F8   | F9    |
+// | SYS LYR | F10  | MAIN  |
+// --------------------------
+            bindings = <
+    &kp F1  &kp F2  &kp F3
+    &kp F4  &kp F5  &kp F6
+    &kp F7  &kp F8  &kp F9
+    &to 2   &kp F10 &to 0
+        >;
+    };
+
+    system_layer {
+// -------------------------------
+// | BT NXT | BT PRV | BT CLR    |
+// | PREV   | PLAY   | NEXT      |
+// | VOL-   | MUTE   | VOL+      |
+// | MAIN   | RET    | ALT LYR   |
+// -------------------------------
+        bindings = <
+    &bt BT_NXT &bt BT_PRV &bt BT_CLR
+    &kp C_PREV &kp C_PP   &kp C_NEXT
+    &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP
+    &to 0 &kp RET &to 1
+            >;
+        };
+    };
+};
+

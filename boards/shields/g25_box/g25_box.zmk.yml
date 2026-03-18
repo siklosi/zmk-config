@@ -1,0 +1,11 @@
+file_format: "1"
+id: g25_box
+name: G25 Box
+type: shield
+features:
+  - keys
+  - encoder
+outputs:
+  - usb
+  - ble
+url: https://zmk.dev/
